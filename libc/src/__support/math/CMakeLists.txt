@@ -1073,6 +1073,15 @@ add_header_library(
 )
 
 add_header_library(
+  sqrti
+  HDRS
+    sqrti.h
+  DEPENDS
+    libc.src.__support.fixed_point.sqrt
+    libc.src.__support.macros.config
+)
+
+add_header_library(
   sincos_eval
   HDRS
     sincos_eval.h

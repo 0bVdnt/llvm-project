@@ -8,11 +8,11 @@
 
 #include "ISqrtTest.h"
 
-#include "src/__support/fixed_point/sqrt.h"
+#include "src/__support/math/sqrti.h"
 #include "src/stdfix/uhksqrtus.h"
 
 unsigned short accum uhksqrtus_fast(unsigned short x) {
-  return LIBC_NAMESPACE::fixed_point::isqrt_fast(x);
+  return LIBC_NAMESPACE::math::sqrti_fast(x);
 }
 
 LIST_ISQRT_TESTS(US, unsigned short, LIBC_NAMESPACE::uhksqrtus);

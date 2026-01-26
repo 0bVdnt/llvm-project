@@ -8,16 +8,15 @@
 
 #include "uksqrtui.h"
 #include "src/__support/common.h"
-#include "src/__support/fixed_point/sqrt.h"
-#include "src/__support/macros/config.h"
+#include "src/__support/math/sqrti.h"
 
 namespace LIBC_NAMESPACE_DECL {
 
 LLVM_LIBC_FUNCTION(unsigned accum, uksqrtui, (unsigned int x)) {
 #ifdef LIBC_FAST_MATH
-  return fixed_point::isqrt_fast(x);
+  return math::sqrti_fast(x);
 #else
-  return fixed_point::isqrt(x);
+  return math::sqrti(x);
 #endif
 }
 

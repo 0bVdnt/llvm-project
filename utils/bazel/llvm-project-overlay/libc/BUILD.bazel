@@ -1185,6 +1185,20 @@ libc_support_library(
 )
 
 libc_support_library(
+    name = "__support_fixed_point_sqrt",
+    hdrs = ["src/__support/fixed_point/sqrt.h"],
+    deps = [
+        ":__support_cpp_bit",
+        ":__support_cpp_limits",
+        ":__support_cpp_type_traits",
+        ":__support_fixed_point",
+        ":__support_macros_attributes",
+        ":__support_macros_optimization",
+        ":llvm_libc_macros_stdfix_macros",
+    ],
+)
+
+libc_support_library(
     name = "__support_fputil_generic_fmod",
     hdrs = ["src/__support/FPUtil/generic/FMod.h"],
     deps = [
@@ -2402,6 +2416,15 @@ libc_support_library(
         ":__support_macros_optimization",
         ":hdr_errno_macros",
         ":hdr_fenv_macros",
+    ],
+)
+
+libc_support_library(
+    name = "__support_math_sqrti",
+    hdrs = ["src/__support/math/sqrti.h"],
+    deps = [
+        ":__support_fixed_point_sqrt",
+        ":__support_macros_config",
     ],
 )
 

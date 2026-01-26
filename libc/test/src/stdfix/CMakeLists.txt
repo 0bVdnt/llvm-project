@@ -161,7 +161,7 @@ add_libc_test(
     libc.src.stdfix.uhksqrtus
     libc.src.__support.CPP.bit
     libc.src.__support.fixed_point.fx_rep
-    libc.src.__support.fixed_point.sqrt
+    libc.src.__support.math.sqrti
     libc.src.__support.FPUtil.basic_operations
     libc.src.__support.FPUtil.sqrt
 )
@@ -180,7 +180,7 @@ add_libc_test(
     libc.src.stdfix.uksqrtui
     libc.src.__support.CPP.bit
     libc.src.__support.fixed_point.fx_rep
-    libc.src.__support.fixed_point.sqrt
+    libc.src.__support.math.sqrti
     libc.src.__support.FPUtil.basic_operations
     libc.src.__support.FPUtil.sqrt
 )

@@ -109,7 +109,7 @@ add_entrypoint_object(
   SRCS
     uhksqrtus.cpp
   DEPENDS
-    libc.src.__support.fixed_point.sqrt
+    libc.src.__support.math.sqrti
 )
 
 add_entrypoint_object(
@@ -119,7 +119,7 @@ add_entrypoint_object(
   SRCS
     uksqrtui.cpp
   DEPENDS
-    libc.src.__support.fixed_point.sqrt
+    libc.src.__support.math.sqrti
 )
 
 add_entrypoint_object(
