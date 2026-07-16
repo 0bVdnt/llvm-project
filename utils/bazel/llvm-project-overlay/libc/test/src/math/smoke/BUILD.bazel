@@ -1556,6 +1556,11 @@ math_test(name = "tanhf")
 math_test(name = "tanpif")
 
 math_test(
+    name = "tgammabf16",
+    deps = ["//libc:__support_fputil_bfloat16"],
+)
+
+math_test(
     name = "totalorder",
     hdrs = ["TotalOrderTest.h"],
 )

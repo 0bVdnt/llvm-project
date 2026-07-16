@@ -35,6 +35,11 @@ math_mpfr_test(name = "cbrt")
 math_mpfr_test(name = "cbrtf")
 
 math_mpfr_test(
+    name = "tgammabf16",
+    deps = ["//libc:__support_fputil_bfloat16"],
+)
+
+math_mpfr_test(
     name = "ceil",
     hdrs = ["CeilTest.h"],
 )
